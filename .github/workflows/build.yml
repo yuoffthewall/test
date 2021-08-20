@@ -26,6 +26,7 @@ jobs:
       - name: compile
         #shell: powershell
         run: |
+          uname -r
           gcc --version
           gcc -o test test.c
 
