@@ -26,6 +26,7 @@ jobs:
       - name: compile
         shell: powershell
         run: |
+          gcc --version
           gcc -o test test.c
 
       # Runs a set of commands using the runners shell
