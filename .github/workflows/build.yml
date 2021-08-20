@@ -15,7 +15,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -24,14 +24,13 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: compile
-        #shell: powershell
+        shell: powershell
         run: |
-          uname -r
-          gcc --version
-          gcc -o test test.c
+          $Properties = 'Caption', 'CSName', 'Version', 'BuildType', 'OSArchitecture'
+          Get-CimInstance Win32_OperatingSystem | Select-Object $Properties | Format-Table -AutoSize
 
       # Runs a set of commands using the runners shell
-      - name: execute
+      #- name: execute
         #shell: powershell
-        run: |
-          ./test
+        #run: |
+          #./test  
