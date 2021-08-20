@@ -26,9 +26,7 @@ jobs:
       - name: compile
         shell: powershell
         run: |
-          Get-Command gcc
-          $Properties = 'Caption', 'CSName', 'Version', 'BuildType', 'OSArchitecture'
-          Get-CimInstance Win32_OperatingSystem | Select-Object $Properties | Format-Table -AutoSize
+          gcc -v
 
       # Runs a set of commands using the runners shell
       #- name: execute
