@@ -27,7 +27,8 @@ jobs:
         shell: powershell
         run: |
           gcc -v
-
+	  pwd
+	  ls	
       # Runs a set of commands using the runners shell
       #- name: execute
         #shell: powershell
