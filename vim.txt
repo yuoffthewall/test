@@ -1,0 +1,45 @@
+o
+insert a newline after the line
+
+O
+insert a newline before the line
+
+n-G
+go to line number n
+
+:s/foo/bar/g	
+replace all "foo" by "bar" in the current line
+
+:%s/foo/bar/g
+replace all "foo" by "bar" in all lines
+
+ctrl-o
+(in insert mode) shift to normal mode for 1 command
+
+ctrl+n
+autocomplete
+
+A
+insert at the end of the line
+
+:%s/\<foo\>/bar/gc
+Change only whole words exactly matching 'foo' to 'bar'; ask for confirmation.
+
+e
+move to the end of the word
+
+:! command
+run the shell command
+
+ce
+change until the end of the word
+(delete until the end of the word then put you in the insert mode)
+
+re
+replace the letter with e
+
+a
+insert after the cursor
+
+<Ctrl-r>
+redo

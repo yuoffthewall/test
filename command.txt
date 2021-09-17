@@ -1,0 +1,23 @@
+tr -dc "A-Za-z 0-9" < /dev/urandom | fold -w100|head -n 1000000 > bigfile.txt
+生成亂字txt 1000000行
+
+chmod +x fileName
+allow makefile
+
+ctrl shift t
+open new terminal in the same tab
+
+ctrl shift d
+close current terminal
+
+ctrl+PageUp(PageDown)
+shift between terminals is the same tab
+
+Ctrl + A , Ctrl + K 
+wipe the current line in the terminal.
+
+git config --global credential.helper store
+git store credential
+
+sudo apt-get purge --auto-remove packagename
+remove package and all dependencies
