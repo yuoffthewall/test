@@ -21,3 +21,12 @@ git store credential
 
 sudo apt-get purge --auto-remove packagename
 remove package and all dependencies
+
+git reset <file>
+undo add
+
+git restore <file>
+discard change
+
+gdb conditional break 
+b FileName.extension:lineNumber if varname condition
